@@ -23,23 +23,21 @@
                         <img src="resources/images/banner.png" width="100%" height="100%" alt="banner"/>
                     </p:layoutUnit>
   
-                <p:layoutUnit position="west" size="245" header="Menú" collapsible="true">
+                <p:layoutUnit position="west" size="245" header="Menú" collapsible="true" id="btnInicio" >
                     <p:menu>
-                            <p:menuitem value="Criterios de Asignación" url="faces/criteriosAsigna.xhtml" />
+                            <p:menuitem value="Inicio" url="faces/index.xhtml" />
                     </p:menu>
                 </p:layoutUnit>
 
                 <p:layoutUnit position="center">
                     <h:form>
+                        <div id="titulo1">
+                            <h:outputText value="Aceptar Asignación o Reasignación" class="titulo1" />
+                        </div>    
                         <div id="busqueda">
-                            <h:panelGrid columns="3">
-                                <h:outputText value="Busqueda Profesional" class="textoBusqueda" />
-                                    <p:spacer width="50"/>
-                                <p:inputText id="counter" value="#{listenerView.text}" >
-                                    <p:ajax event="keyup" update="out" listener="#{listenerView.handleKeyEvent}"  />
-                                </p:inputText>
-                                <h:outputText id="out" value="#{listenerView.text}" />
-                            </h:panelGrid>
+                                <h:outputText value="Actividades Pendientes" class="textoBusqueda" />
+                                <br><p:spacer width="5"/></br>
+                                <h:outputText value="-Asignaciones Pendientes" class="textoBusqueda" />
                         </div>    
                     </h:form>
                     <p:dataTable var="car" >
@@ -47,48 +45,41 @@
                             <h:outputText value="prueba" />
                         </p:column>
 
-                        <p:column headerText="Tipo de Solicitud">
+                        <p:column headerText="Fecha Solicitud">
                             <h:outputText value="11111" />
                         </p:column>
 
-                        <p:column headerText="Tipo de Tramite">
+                        <p:column headerText="Tipo de Solicitud">
                             <h:outputText value="" />
                         </p:column>
 
-                        <p:column headerText="Temas o Asuntos">
+                        <p:column headerText="Descripción">
                             <h:outputText value="" />
                         </p:column>
                         
-                        <p:column headerText="Grado Cargo">
+                        <p:column headerText="Asignación Propuesta">
                             <h:outputText value="" />
                         </p:column>
 
-                        <p:column headerText="Especialidades">
+                        <p:column headerText="Grado Confianza">
                             <h:outputText value="" />
                         </p:column>
 
-                        <p:column headerText="Estudios">
+                        <p:column headerText="Aceptar Reasignar">
                             <h:outputText value="" />
                         </p:column>
                        
                     </p:dataTable>
                         <td colspan="1">1111</td>
                         <td colspan="2">1111</td>
+                    <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                            <p:outputLabel for="@next"/>
+                            <p:selectBooleanCheckbox value="#{selectBooleanView.value1}" />
+
+                    </h:panelGrid>
                         
                     </p:layoutUnit>
-                <p:layoutUnit position="south" size="130" closable="true" collapsible="true">
-                    <div id="botonAgregarProf" style="">
-                        <p:commandButton value="Agregar Profesional" class="button" />
-                    </div>
 
-                        <div id="botonGuardar">
-                            <p:commandButton value="Guardar" class="button"/>
-                        </div> 
-                        <div id="botonCerrar">
-                            <p:commandButton value="Cerrar" class="button" />
-                        </div> 
-
-                </p:layoutUnit>
 
             </p:layout>
  
