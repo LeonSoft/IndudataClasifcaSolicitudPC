@@ -23,8 +23,6 @@
     bottom: 1%;
 }
 
-
-
 .button {
     text-shadow: none !important;
     font-weight: normal !important;
@@ -62,5 +60,11 @@ text-decoration:none;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+}
+
+/*Este quita un aviso que de no records found*/
+.ui-datatable tbody td {
+    border-color: inherit;
+    display: none;
 }
 

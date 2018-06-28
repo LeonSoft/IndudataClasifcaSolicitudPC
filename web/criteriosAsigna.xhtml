@@ -40,6 +40,8 @@
                                 <h:outputText value="-Asignaciones Pendientes" class="textoBusqueda" />
                         </div>    
                     </h:form>
+<!-- Se bloquea esta datatable para "Quemar" los datos en el siguiente panelgrid
+
                     <p:dataTable var="car" >
                         <p:column headerText="Profesional">
                             <h:outputText value="prueba" />
@@ -70,13 +72,115 @@
                         </p:column>
                        
                     </p:dataTable>
-                        <td colspan="1">1111</td>
-                        <td colspan="2">1111</td>
-                    <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
-                            <p:outputLabel for="@next"/>
-                            <p:selectBooleanCheckbox value="#{selectBooleanView.value1}" />
 
-                    </h:panelGrid>
+-->
+                    <p:panelGrid style="margin-top:20px; width: 100%">
+
+                            <p:row>
+                                <p:column style="font-weight: bold;">Fecha Solicitud</p:column>
+                                <p:column style="font-weight: bold;">Tipo de solicitud</p:column>
+                                <p:column style="font-weight: bold;">Descripción</p:column>
+                                <p:column style="font-weight: bold;">Asignación Propuesta</p:column>
+                                <p:column style="font-weight: bold;">Grado Confianza</p:column>
+                                <p:column colspan="2" style="font-weight: bold;">Aceptar / Reasignar</p:column>            
+                            </p:row>
+
+
+
+                                <p:row>
+                                    <p:column>23/06/2018</p:column>
+                                    <p:column>Conceptos Juridicos</p:column> 
+                                    <p:column>Temas o Asuntos, otros, espacio para descripciones largas o cortas.</p:column>
+                                    <p:column>Profesional 1</p:column>
+                                    <p:column>70%</p:column>
+                                    <p:column>
+                                        <p:selectBooleanCheckbox/>
+                                    </p:column>
+                                    <p:column>
+                                        <select name="OS">
+                                           <option value="1">Elija Profesional</option> 
+                                           <option value="2">Profesional 1</option> 
+                                           <option value="3">Profesional 2</option>
+                                           <option value="4">Profesional 3</option> 
+                                        </select>
+                                    </p:column>
+
+                                </p:row>
+
+                                <p:row>
+                                    <p:column>23/06/2018</p:column>
+                                    <p:column>Conceptos Juridicos</p:column> 
+                                    <p:column>Temas o Asuntos, otros, espacio para descripciones largas o cortas.</p:column>
+                                    <p:column>Profesional 1</p:column>
+                                    <p:column>70%</p:column>
+                                    <p:column>
+                                        <p:selectBooleanCheckbox/>
+                                    </p:column>
+                                    <p:column>
+                                        <select name="OS">
+                                           <option value="1">Elija Profesional</option> 
+                                           <option value="2">Profesional 1</option> 
+                                           <option value="3">Profesional 2</option>
+                                           <option value="4">Profesional 3</option> 
+                                        </select>
+                                    </p:column>
+
+                                </p:row>    <p:row>
+                                    <p:column>23/06/2018</p:column>
+                                    <p:column>Conceptos Juridicos</p:column> 
+                                    <p:column>Temas o Asuntos, otros, espacio para descripciones largas o cortas.</p:column>
+                                    <p:column>Profesional 1</p:column>
+                                    <p:column>70%</p:column>
+                                    <p:column>
+                                        <p:selectBooleanCheckbox/>
+                                    </p:column>
+                                    <p:column>
+                                        <select name="OS">
+                                           <option value="1">Elija Profesional</option> 
+                                           <option value="2">Profesional 1</option> 
+                                           <option value="3">Profesional 2</option>
+                                           <option value="4">Profesional 3</option> 
+                                        </select>
+                                    </p:column>
+
+                                </p:row>    <p:row>
+                                    <p:column>23/06/2018</p:column>
+                                    <p:column>Conceptos Juridicos</p:column> 
+                                    <p:column>Temas o Asuntos, otros, espacio para descripciones largas o cortas.</p:column>
+                                    <p:column>Profesional 1</p:column>
+                                    <p:column>70%</p:column>
+                                    <p:column>
+                                        <p:selectBooleanCheckbox/>
+                                    </p:column>
+                                    <p:column>
+                                        <select name="OS">
+                                           <option value="1">Elija Profesional</option> 
+                                           <option value="2">Profesional 1</option> 
+                                           <option value="3">Profesional 2</option>
+                                           <option value="4">Profesional 3</option> 
+                                        </select>
+                                    </p:column>
+
+                                </p:row>    <p:row>
+                                    <p:column>23/06/2018</p:column>
+                                    <p:column>Conceptos Juridicos</p:column> 
+                                    <p:column>Temas o Asuntos, otros, espacio para descripciones largas o cortas.</p:column>
+                                    <p:column>Profesional 1</p:column>
+                                    <p:column>70%</p:column>
+                                    <p:column>
+                                        <p:selectBooleanCheckbox/>
+                                    </p:column>
+                                    <p:column>
+                                        <select name="OS">
+                                           <option value="1">Elija Profesional</option> 
+                                           <option value="2">Profesional 1</option> 
+                                           <option value="3">Profesional 2</option>
+                                           <option value="4">Profesional 3</option> 
+                                        </select>
+                                    </p:column>
+
+                                </p:row>
+                          </p:panelGrid>
                         
                     </p:layoutUnit>
 
